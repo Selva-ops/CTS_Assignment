@@ -1,0 +1,126 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Header */
+
+header {
+  background: #0d6efd;
+  color: white;
+  padding: 15px;
+}
+
+#mainHeader {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+/* Sections */
+
+section {
+  padding: 25px;
+}
+
+/* Event Cards */
+
+#eventContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.eventCard {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+/* Table */
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+}
+
+.gallery-img {
+  width: 180px;
+  border: 3px solid #0d6efd;
+  cursor: pointer;
+}
+
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 15px;
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gallery-img {
+    width: 100px;
+  }
+
+  #eventContainer {
+    flex-direction: column;
+  }
+}

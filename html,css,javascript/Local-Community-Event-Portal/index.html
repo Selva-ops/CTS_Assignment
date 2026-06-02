@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Event Portal</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    #welcomeBanner {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <h1 id="mainHeader">Community Event Portal</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="help.html" target="_blank">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home">
+    <div id="welcomeBanner">
+      <h2>Welcome to Chennai Community Events</h2>
+
+      <span style="color:yellow;font-weight:bold;">
+        First 50 registrations are free!
+      </span>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events">
+    <h2>Upcoming Events</h2>
+
+    <label>Filter Category:</label>
+
+    <select id="categoryFilter">
+      <option value="All">All</option>
+      <option value="Music">Music</option>
+      <option value="Food">Food</option>
+      <option value="Health">Health</option>
+      <option value="Education">Education</option>
+    </select>
+
+    <div id="eventContainer"></div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Event Gallery</h2>
+
+    <table>
+      <tr>
+        <td>
+          <img src="assets/images/event1.jpg" alt="Event 1" title="Event 1" class="gallery-img">
+        </td>
+
+        <td>
+          <img src="assets/images/event2.jpg" alt="Event 2" title="Event 2" class="gallery-img">
+        </td>
+
+        <td>
+          <img src="assets/images/event3.jpg" alt="Event 3" title="Event 3" class="gallery-img">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="assets/images/event4.jpg" alt="Event 4" title="Event 4" class="gallery-img">
+        </td>
+
+        <td>
+          <img src="assets/images/event5.jpg" alt="Event 5" title="Event 5" class="gallery-img">
+        </td>
+
+        <td>
+          <img src="assets/images/event6.jpg" alt="Event 6" title="Event 6" class="gallery-img">
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Registration -->
+  <section id="register">
+
+    <h2>Event Registration</h2>
+
+    <form id="registerForm">
+
+      <input type="text" name="name" placeholder="Enter Name" required autofocus>
+
+      <input type="email" name="email" placeholder="Enter Email" required>
+
+      <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+
+      <select name="event">
+        <option>Music Night</option>
+        <option>Food Festival</option>
+        <option>Yoga Camp</option>
+        <option>Coding Workshop</option>
+      </select>
+
+      <textarea name="message" id="message" placeholder="Message"></textarea>
+
+      <p>Characters: <span id="count">0</span></p>
+
+      <button type="submit">Register</button>
+
+      <output id="output"></output>
+
+    </form>
+
+  </section>
+
+  <!-- Video -->
+  <section>
+    <h2>Promo Video</h2>
+
+    <video id="promoVideo" width="500" controls>
+
+      <source src="assets/videos/promo.mp4">
+    </video>
+
+    <p id="videoStatus"></p>
+  </section>
+
+  <!-- Geolocation -->
+  <section>
+    <h2>Nearby Events</h2>
+
+    <button id="locationBtn">
+      Find Nearby Events
+    </button>
+
+    <p id="locationResult"></p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+
+    <h2>Contact</h2>
+
+    <p>Email: support@example.com</p>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Community Event Portal
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
